@@ -97,6 +97,7 @@
       top: 0;
       right: 0;
     }
+
   </style>
 
   <style>
@@ -128,6 +129,13 @@
 
     .projects > ol > li h3 {
       display: inline-block;
+    }
+
+    .projects img {
+      padding-top: 40px;
+      padding-bottom: 20px;
+      width: 450px;
+
     }
   </style>
   <style>
@@ -278,9 +286,9 @@
 <article>
   <section class="bio">
     <h1>邓郭龙</h1>
-    <img src="./images/cv.png" alt=""  height="150px">
+    <img src="./images/cv.png" alt="" height="150px">
     <p>
-      男 | 21岁 | 前端开发工程师 | 武汉
+      男 | 21岁 | 前端开发工程师
     </p>
     <p>
       手机：<a href="tel:17607216953">17607216953</a> | 微信：Lgd_allen | 邮箱：<a href="mailto:guolong613@gmail.com">guolong613@gmail.com</a>
@@ -294,34 +302,55 @@
       <li>
         <header>
           <h3>咕噜咕噜 UI</h3>
+          <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
+            <img src="images/gulu.png" alt="">
+          </a>
           <span>
-              <a href="#">源码链接</a>
+              <a href="https://github.com/Allen-XiaoDeng/gulu-UI">源码链接</a>
               <a href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">项目预览</a>
             </span>
         </header>
         <p>
-          一款基于 <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的小型 UI 库
-          涵盖了<strong>Button</strong>,Switch ...等常见组件
+          技术栈： <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong>
         </p>
-        <p>
-          制作过程让我对 <strong>Vue3</strong> 有了新的认识,并且深入理解了 <strong>setup</strong>, onMounted, <strong>watchEffect</strong>, ref, <strong>computed</strong>
-          等 Composition API
+        <p style="text-indent:2em">
+          这是我在学习<strong>Vue3</strong>时制作的一个UI库，涵盖了Button，Switch...常见UI组件，在制作过程中，我对 <strong>Vue3</strong>
+          有了新的认识,并且深入理解了 <strong>setup</strong>, onMounted, <strong>watchEffect</strong>,
+          ref, <strong>computed</strong>等 Composition API。全程亲手编写，尽量不采用第三方库，模块化的源代码简洁明了，易于阅读。
         </p>
       </li>
       <li>
         <header>
+          <h3>大屏可视化</h3>
+          <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
+            <img src="images/bigscreen.png">
+          </a>
+          <span>
+              <a href="https://github.com/Allen-XiaoDeng/bigscreen">源码链接</a>
+              <a href="https://allen-xiaodeng.github.io/bigscreen-website/#/">项目预览</a>
+            </span>
+        </header>
+        <p>
+          技术栈： <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Echarts</strong>
+        </p>
+        <p style="text-indent:2em">这个项目是我在学习前端可视化与<strong>echarts</strong>时，仿照网上的开源项目制作而成的。页面布局使用了<strong>Grid</strong>
+          和 <strong>Flex布局</strong>，为了适应所有屏幕，我们使用了动态<strong>rem</strong>方案。项目中包含的图例有柱形图，折线图，饼图，
+          地图等，并且所有图例都可以实时更新数据并辅以动画交互。通过这个项目，我掌握了<strong>大屏可视化</strong>项目的制作技巧。
+        </p>
+      </li>
+      <li class="page2">
+        <header>
           <h3>喵财记账</h3>
           <span>
-              <a href="#">源码私有</a>
+              <a href="https://github.com/Allen-XiaoDeng/Project-acounts">源码链接</a>
               <a href="https://allen-xiaodeng.github.io/acounts-website/">项目预览</a>
             </span>
         </header>
         <p>
-          一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+          技术栈：<strong>React</strong> / <strong>TypeScript</strong> / <strong>Hooks</strong> / <strong>Webpack</strong>
         </p>
-
         <p>
-          这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+          这是我从自己的需求出发，设计出的极简主义记账应用，特点是随时随地快速记账，
         </p>
         <p>
           该项目使用 <strong>styled-components</strong>来实现 在 TypeScript 文件中写样式, <br>
@@ -331,25 +360,8 @@
           使用 <strong>localStorage</strong>来进行本地数据存储 <br>
         </p>
       </li>
-      <li>
-        <header>
-          <h3>咕噜咕噜导航</h3>
-          <span>
-              <a href="#">源码私有</a>
-              <a href="https://allen-xiaodeng.github.io/Project-nav-js/dist/index.html">项目预览</a>
-            </span>
-        </header>
-        <p>
-          这是一个基于 <strong>原生JavaScript</strong> 自制的前端站点导航，
-        </p>
-        <p>
-          可以方便收藏自己常去的一些网站
-        </p>
-      </li>
     </ol>
   </section>
-
-
   <section class="skills">
     <h2>技能</h2>
     <div class="wrapper">
@@ -357,19 +369,29 @@
       <ul>
         <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
         <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+        <li>熟练掌握 <strong>React全家桶</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
         <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-        <li>熟练掌握 <strong>React全家桶的使用</strong>，包括 create-react-app、ReactRouter、Redux 等</li>
-        <li>熟悉 ES6，包括 let / Promise / 析构赋值</li>
+        <li>熟悉 ES6，包括 let / <strong>Promise</strong> / 析构赋值</li>
         <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
         <li>了解 <strong>Webpack 的配置和优化</strong></li>
       </ul>
     </div>
   </section>
-
-
   <section class="openSource">
     <h2>开源项目</h2>
     <ul>
+      <li>
+        <header>
+          <h3>咕噜咕噜导航</h3>
+          <span>
+              <a href="https://github.com/Allen-XiaoDeng/Project-nav-js">源码链接</a>
+              <a href="https://allen-xiaodeng.github.io/Project-nav-js/dist/index.html">项目预览</a>
+            </span>
+        </header>
+        <p>
+          这是我基于 <strong>原生JavaScript</strong> 自制的前端站点导航，可以方便收藏自己常去的一些网站
+        </p>
+      </li>
       <li>
         <header>
           <h3>自己写的 DOM 库</h3>
@@ -377,7 +399,7 @@
         </header>
         <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
       </li>
-      <li class="page2">
+      <li>
         <header>
           <h3>会动的星之卡比</h3>
           <span>
@@ -399,15 +421,13 @@
       </li>
     </ul>
   </section>
-
   <section class="others">
     <h2>其他链接</h2>
     <ul>
       <li><a href="https://www.zhihu.com/people/fall-92-99">我的博客</a>，目前已有 40 篇技术文章</li>
-      <li><a href="https://github.com/Allen-XiaoDeng">我的 GitHub</a>，过去三个月有 200 次提交</li>
+      <li><a href="https://github.com/Allen-XiaoDeng">我的 GitHub</a>，过去三个月有 250 次提交</li>
     </ul>
   </section>
-
   <section class="education">
     <h2>教育经历</h2>
     <p>
