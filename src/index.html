@@ -4,437 +4,353 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>我的简历</title>
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>邓郭龙的简历</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_974371_cqiyab42oyq.css">
   <style>
+    /*css reset*/
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
-    body {
-      background: #eee;
-      margin: 20px 0;
-    }
-
-    article {
-      width: 21cm;
-      min-height: 29.7cm;
-      background: white;
-      margin: 0 auto;
-      overflow: auto;
-      padding: 1em;
-    }
-  </style>
-  <style media="print">
-    body {
-      margin: 0;
-    }
-
-    .page2 {
-      page-break-before: always;
-      margin-top: 30px;
-    }
-  </style>
-  <style>
-    body {
-    }
-
-    p {
-      margin: .3em 0;
-    }
-
-    h1 {
-      font-size: 25px;
-      margin-top: 0;
-    }
-
-    h4,
-    h5,
-    h6 {
-      font-weight: normal;
-    }
-
-    ol,
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    strong {
-      font-weight: normal;
-      color: #f60;
-    }
-
-    a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px solid;
-    }
-
-    p,
-    li {
-      color: #666;
-    }
-
-    strong {
-      font-weight: normal;
-    }
-
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-    }
-
-    .bio {
-      position: relative;
-    }
-
-    .bio img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-  </style>
-
-  <style>
-    .projects {
-    }
-
-    .projects p {
-      color: #666;
-    }
-
-    .projects strong {
-      color: #f60;
-    }
-
-    .projects > ol {
-      margin-top: 0;
-      list-style-position: inside;
-      padding: 0;
-    }
-
-    .projects > ol > li {
-      margin-bottom: 24px;
-    }
-
-    .projects > ol > li > header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .projects > ol > li h3 {
-      display: inline-block;
-    }
-
-    .projects img {
-      padding-top: 35px;
-      padding-bottom: 15px;
-      width: 450px;
-
-    }
-  </style>
-  <style>
-    .skills {
-    }
-
-    #skills {
-
-      width: 500px;
-      height: 270px;
-    }
-
-    @media print {
-      #skills {
-        display: none;
-      }
-    }
-
-
-    .skills > .wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .skills > .wrapper > :first-child {
-      margin-right: 24px;
-    }
-
-    .skills > .wrapper > #skills {
-    }
-
-    .skills > .wrapper > ul {
-      color: #666;
-    }
-
-    .skills > .wrapper strong {
-      color: #f60;
-    }
-
-    .skills > .wrapper > ul > li {
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-  </style>
-  <style>
-    .openSource {
-    }
-
-    .openSource > h2 {
-    }
-
-    .openSource header img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-
-    .openSource > ul {
-    }
-
-    .openSource > ul > li {
-      margin-bottom: 24px;
-    }
-
-    .openSource header {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .openSource h3 {
-    }
-  </style>
-  <style>
-    .jobs {
-    }
-
-    .jobs > h2 {
-    }
-
-    .jobs > ol {
-    }
-
-    .jobs > ol > li {
-      margin: 12px 0;
-    }
-
-    .jobs header {
-      display: flex;
-      color: #666;
-      margin-bottom: 12px;
-    }
-
-    .jobs header > h3 {
-      font-size: 18px;
-      color: #333;
-    }
-
-    .jobs header > h4 {
       margin-left: 1em;
-      font-size: 18px;
     }
 
-    .jobs header > span {
-      font-size: 18px;
-      margin-left: auto;
+    li {
+      margin-top: 10px;
     }
-  </style>
 
+    /*layout*/
+    body {
+      display: grid;
+      grid: auto auto / 1fr 300px 700px 1fr;
+    }
 
-  <style>
-    @media (max-width: 500px) {
+    header {
+      background: lightgreen;
+      grid-column: 1 / span 4;
+      grid-row: 1;
+    }
+
+    main {
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    aside {
+
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    @media (max-width: 1000px) {
       body {
-        margin: 0;
-      }
-
-      article {
-        width: auto;
-        height: auto;
-      }
-
-      .bio img {
-        display: none;
-      }
-
-      .skills .wrapper {
-        flex-direction: column;
-      }
-
-      #skills {
-        width: auto;
-      }
-
-      .jobs header {
-        flex-direction: column;
-      }
-
-      .jobs header > h3,
-      .jobs header > h4,
-      .jobs header > span {
-        margin: 0;
+        grid: 100px 400px / 1fr 200px 400px 1fr;
       }
     }
+
+    @media (max-width: 768px) {
+      body {
+        grid: auto auto auto / 1fr;
+        padding: 0 10px 30px 10px;
+      }
+
+      header {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      main {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      aside {
+        grid-column: 1;
+        grid-row: 3;
+      }
+    }
+
+    /*common*/
+    body {
+      font: 14px/1.5 Arial;
+      color: #333;
+      padding-bottom: 30px;
+    }
+
+    /*page*/
+    header {
+      text-align: center;
+      padding: 30px;
+      background: #444;
+      color: #fff;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    header figcaption {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    header figure p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    section {
+      display: grid;
+      grid: auto auto / 50px 120px 1fr;
+      align-items: center;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    section>.iconfont {
+      grid-row: 1;
+      grid-column: 1;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: #66a9a3;
+      border-radius: 50%;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    section>h2 {
+      grid-row: 1;
+      grid-column: 2;
+      font-size: 18px;
+    }
+
+    section>hr {
+      grid-row: 1;
+      grid-column: 3;
+      border: none;
+      height: 3px;
+      background: #66a9a3;
+    }
+
+    section>.detail {
+      grid-row: 2;
+      grid-column: 2/span 2
+    }
+
+    section .icon-list {
+      display: flex;
+      align-items: center;
+    }
+
+    section .icon-list .iconfont {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    section .skill-bar dt {
+      margin-top: 16px;
+    }
+
+    section .skill-bar dd {
+      height: 3px;
+      background: #eaeaea;
+    }
+
+    section .skill-bar dd div {
+      height: 100%;
+      background: #66a9a3;
+      margin-top: 10px;
+    }
+
+    section .timeline-panel {
+      display: grid;
+      grid: auto auto / 120px 1fr auto;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    section .timeline-panel .date {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    section .timeline-panel>h3 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+
+    section .timeline-panel .intro {
+      grid-row: 1;
+      grid-column: 3;
+      color: #666;
+    }
+
+    section .timeline-panel .detail {
+      grid-row: 2;
+      grid-column: 2/span 2;
+      margin-top: 10px;
+    }
+
   </style>
 </head>
 
 <body>
-<article>
-  <section class="bio">
-    <h1>邓郭龙</h1>
-    <img src="./images/cv.png" alt="" height="150px">
-    <p>
-      男 | 21岁 | 前端开发工程师
-    </p>
-    <p>
-      手机：<a href="tel:17607216953">17607216953</a> | 微信：Lgd_allen | 邮箱：<a href="mailto:guolong613@gmail.com">guolong613@gmail.com</a>
-    </p>
-  </section>
-  <section class="education">
-    <h2>教育经历</h2>
-    <p>
-      <span><time>2018年</time>~<time>2022年</time></span>
-      武汉华夏理工学院 信息工程学院 本科
-    </p>
-  </section>
+  <header>
+    <figure>
+      <img src="http://cloud.hunger-valley.com/18-12-19/61170968.jpg" alt="头像">
+      <figcaption>邓郭龙</figcaption>
+      <p>应聘前端工程师</p>
+    </figure>
+  </header>
+  <main>
+    <section>
+      <span class="iconfont icon-education"></span>
+      <h2>教育经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date">09/2018~07/2022</div>
+          <h3>武汉华夏理工学院</h3>
+          <p class="intro">软件工程专业</p>
+          <div class="detail">
+          </div>
+        </div>
+        <div class="timeline-panel">
+          <div class="date">09/2020~至今</div>
+          <h3>111</h3>
+          <p class="intro">英语</p>
+          <div class="detail">
+          </div>
+        </div>
 
-  <section class="projects">
-    <h2>项目经历</h2>
-    <ol>
-      <li>
-        <header>
-          <h3>咕噜咕噜 UI</h3>
-          <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
-            <img src="images/gulu.png" alt="">
-          </a>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/gulu-UI">源码链接</a>
-              <a href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">项目预览</a>
-            </span>
-        </header>
-        <p>
-          技术栈： <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong>
-        </p>
-        <p style="text-indent:2em">
-          这是我在学习<strong>Vue3</strong>时制作的一个UI库，涵盖了Button，Switch...常见UI组件，在制作过程中，我对 <strong>Vue3</strong>
-          有了新的认识,并且深入理解了 <strong>setup</strong>, onMounted, <strong>watchEffect</strong>,
-          ref, <strong>computed</strong>等 Composition API。全程亲手编写，尽量不采用第三方库，模块化的源代码简洁明了，易于阅读。
-        </p>
-      </li>
-      <li>
-        <header>
-          <h3>大屏可视化</h3>
-          <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
-            <img src="images/bigscreen.png">
-          </a>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/bigscreen">源码链接</a>
-              <a href="https://allen-xiaodeng.github.io/bigscreen-website/#/">项目预览</a>
-            </span>
-        </header>
-        <p>
-          技术栈： <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Echarts</strong>
-        </p>
-        <p style="text-indent:2em">这个项目是我在学习前端可视化与<strong>echarts</strong>时，仿照网上的开源项目制作而成的。页面布局使用了<strong>Grid</strong>
-          和 <strong>Flex布局</strong>，为了适应所有屏幕，我们使用了动态<strong>rem</strong>方案。项目中包含的图例有柱形图，折线图，饼图，
-          地图等，并且所有图例都可以实时更新数据并辅以动画交互。通过这个项目，我掌握了<strong>大屏可视化</strong>项目的制作技巧。
-        </p>
-      </li>
-      <li class="page2">
-        <header>
-          <h3>旺财记账</h3>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/wangcai-react">源码链接</a>
-              <a href="http://guolong.xyz">项目预览</a>
-            </span>
-        </header>
-        <p>
-          技术栈：<strong>React</strong> / <strong>Hooks</strong> / <strong>Node.js</strong> / <strong>Vite</strong>
-        </p>
-        <p style="text-indent:2em">
-          这是我从自己的需求出发，开发的一款记账应用，特点是随时随地快速记账，我每天都用它来记账。该项目是基于前端框架 React 实现,使用 <strong>React-hooks API</strong> 来编写, 使用 <strong>React-Router</strong>来实现路由切换,
-          使用 <strong>自定义Hooks</strong>来实现全局状态管理, 使用 <strong>localStorage</strong>来进行本地数据存储,服务端采用Node后端框架
-          <strong>eggjs</strong>来搭建,使用<strong>Mysql数据库</strong>来存储用户信息。
-        </p>
-      </li>
-    </ol>
-  </section>
-  <section class="skills">
-    <h2>技能</h2>
-    <div class="wrapper">
-      <div id="skills"></div>
-      <ul>
-        <li>熟悉页面制作技巧并完成<strong>移动端适配</strong>，能将设计稿<strong>完美还原</strong></li>
-        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由等</li>
-        <li>熟练掌握 <strong>React全家桶</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-        <li>熟悉 ES6，包括 let / <strong>Promise</strong> / 析构赋值</li>
-        <li>熟悉 <strong>Linux</strong>操作系统命令行的基本操作</li>
-        <li>了解<strong>Mysql</strong>数据库的基本操作 , <strong>Webpack 的配置和优化</strong></li>
-        <li>了解<strong>Node.js</strong>Web应用开发 , <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-        <li>对<strong>docker容器</strong>的概念有一定的了解</li>
-      </ul>
-    </div>
-  </section>
-  <section class="openSource">
-    <h2>个人项目</h2>
-    <ul>
-      <li>
-        <header>
-          <h3>咕噜咕噜导航</h3>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/Project-nav-js">源码链接</a>
-              <a href="https://allen-xiaodeng.github.io/Project-nav-js/dist/index.html">项目预览</a>
-            </span>
-        </header>
-        <p>
-          这是我基于 <strong>原生JavaScript</strong> 自制的前端站点导航，可以方便收藏自己常去的一些网站
-        </p>
-      </li>
-      <li>
-        <header>
-          <h3>自己写的 DOM 库</h3>
-          <a href="https://github.com/Allen-XiaoDeng/dom-2">源码链接</a>
-        </header>
-        <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
-      </li>
-      <li>
-        <header>
-          <h3>会动的星之卡比</h3>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/Kirby">源码链接</a>
-              <a href="https://allen-xiaodeng.github.io/Kirby/dist/index.html">项目预览</a>
-            </span>
-        </header>
-        <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
-      </li>
-      <li>
-        <header>
-          <h3>简易画板</h3>
-          <span>
-              <a href="https://github.com/Allen-XiaoDeng/canvas-demo-1">源码链接</a>
-              <a href="https://allen-xiaodeng.github.io/canvas-demo-1/">项目预览</a>
-            </span>
-        </header>
-        <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
-      </li>
-    </ul>
-  </section>
-  <section class="others">
-    <h2>其他链接</h2>
-    <ul>
-      <li><a href="https://www.zhihu.com/people/fall-92-99">我的博客</a>，目前已有 40 篇技术文章</li>
-      <li><a href="https://github.com/Allen-XiaoDeng">我的 GitHub</a>，过去三个月有 300 次提交</li>
-    </ul>
-  </section>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-experience"></span>
+      <h2>工作经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date">09/2013~07/2017</div>
+          <h3>监控平台</h3>
+          <p class="intro">前端工程师</p>
+          <div class="detail">
+            <ul>
+              <li>项目介绍： 该项目的目的是搭建线上学习平台，把线下课堂的完整学习流程搬到线上，平台包括课程展示、购买、直播、录播、作业、权限管理、停课复课、试听等几十个大功能。该项目采用前后分离的技术方案，
+                我主要负责前端部分的开发。项目前端部分使用Vue技术栈，移动端平台使用自己实现的vue ui组件库。</li>
+              <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+              <li>项目成果: 项目支撑日常教学活动、运营活动的正常开展，支持数千学生的日常线上学习，几十万用户的日常访问。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-project"></span>
+      <h2>项目经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date">09/2013~07/2017</div>
+          <h3>写代码啦课程平台Web端项目</h3>
+          <div class="detail">
+            <ul>
+              <li>项目介绍： 该项目的目的是搭建线上学习平台，把线下课堂的完整学习流程搬到线上，平台包括课程展示、购买、直播、录播、作业、权限管理、停课复课、试听等几十个大功能。该项目采用前后分离的技术方案，
+                我主要负责前端部分的开发。项目前端部分使用Vue技术栈，移动端平台使用自己实现的vue ui组件库。</li>
+              <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+              <li>项目成果: 项目支撑饥人谷日常教学活动、运营活动的正常开展，支持数千学生的日常线上学习，几十万用户的日常访问。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-panel">
+          <div class="date">09/2013~07/2017</div>
+          <h3>写代码啦课程平台Web端项目</h3>
+          <div class="detail">
+            <ul>
+              <li>项目介绍： 该项目的目的是搭建线上学习平台，把线下课堂的完整学习流程搬到线上，平台包括课程展示、购买、直播、录播、作业、权限管理、停课复课、试听等几十个大功能。该项目采用前后分离的技术方案，
+                我主要负责前端部分的开发。项目前端部分使用Vue技术栈，移动端平台使用自己实现的vue ui组件库。</li>
+              <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+              <li>项目成果: 项目支撑饥人谷日常教学活动、运营活动的正常开展，支持数千学生的日常线上学习，几十万用户的日常访问。</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
-</article>
-<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
-<script src="./main.js"></script>
+  </main>
+  <aside>
+    <section>
+      <span class="iconfont icon-personal"></span>
+      <h2>基本信息</h2>
+      <hr>
+      <div class="detail">
+        <div class="icon-list"><span class="iconfont icon-phone"></span>17607216953</div>
+        <div class="icon-list"><span class="iconfont icon-wechat"></span>Allengl_</div>
+        <div class="icon-list"><span class="iconfont icon-email"></span>guolong613@gmail.com</div>
+        <div class="icon-list"><span class="iconfont icon-education"></span>本科</div>
+
+
+
+
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-introduction"></span>
+      <h2>掌握技能</h2>
+      <hr>
+      <div class="detail">
+        <ul>
+          <li>掌握HTML5/CSS3，熟悉Flex布局、Grid布局、移动端适配等</li>
+          <li>熟悉TypeScript，能够使用TypeScript进行开发</li>
+          <li>熟悉React技术栈如React Router、Hooks、Zustand等技术，能够熟练使用React进行开发</li>
+          <li>熟悉Vue技术栈如Vue Router、Pinia、Vite及相关流行库的使用，理解其重要概念</li>
+          <li>熟悉微信小程序开发，使用Taro多端框架进行微信小程序开发</li>
+          <li>熟练使用CSS Modules、styled components、unocss等相关技术引入CSS</li>
+          <li>熟悉Webpack、Vite等构建工具的使用</li>
+          <li>熟悉前后端交互技术Axios、了解web性能优化></li>
+          <li>熟悉Node.js开发，能搭建基础后台开发</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-skills"></span>
+      <h2>技能图谱</h2>
+      <hr>
+      <div class="detail">
+        <dl class="skill-bar">
+          <dt>TavaScript</dt>
+          <dd>
+            <div style="width:60%"></div>
+          </dd>
+          <dt>CSS3</dt>
+          <dd>
+            <div style="width:70%"></div>
+          </dd>
+          <dt>Node</dt>
+          <dd>
+            <div style="width:20%"></div>
+          </dd>
+          <dt>Vue</dt>
+          <dd>
+            <div style="width:60%"></div>
+          </dd>
+          <dt>React</dt>
+          <dd>
+            <div style="width:88%"></div>
+          </dd>
+        </dl>
+      </div>
+    </section>
+  </aside>
 </body>
 
 </html>
