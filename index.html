@@ -270,8 +270,32 @@
       <hr>
       <div class="detail">
         <div class="timeline-panel">
+          <div class="date">03/2023~01/2023</div>
+          <h3>叶子记账——React</h3>
+          <div class="detail">
+            <ul>
+              <li>项目介绍：这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> 构建的记账应用，使用 ReactRouter 来做路由鉴权和路由守卫，使用
+                Zustand 来做全局状态管理，
+                ，项目主要采用了 UnoCSS 和 styled-component CSS技术方案，为了适配移动端浏览器，放弃了全屏，使用 vh-check 来整高度，使页面刚好填满画面，使用 JWT 来做登录鉴权，
+                在没有后端 api 的情况下，用 Mock 和 fakerjs 来模拟请求数据，封装了 useAjax Hooks 让拦截器读取JWT，进行统一的错误处理和自动Loading，使用 errorElement +
+                loader 实现路由守卫，使用 SWR 来优化数据请求，用 useSWRInfinite 实现无限加载数据，可视化部分引入 Echarts 模块，实现了折线图和饼图两种数据的可视化，提升网站性能方面，采用动态 import 和
+                Code Splitting
+                项目使用动态 import + suspense 来动态加载组件,用 manualChunks 对 Echarts 和 node_modules 进行手动分块
+              </li>
+              </li>
+              <li>技术栈：React、TSX、ReactRouter、Vite</li>
+              <li>项目成果:
+                <span>
+                  <a href="https://github.com/Allengl/react-leaf" target="_blank">源码链接</a>
+                  <a href="https://react-leaf.deng.gl" target="_blank">项目预览</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-panel">
           <div class="date">08/2022~01/2023</div>
-          <h3>叶子记账</h3>
+          <h3>叶子记账——Vue</h3>
           <div class="detail">
             <ul>
               <li>项目介绍：本项目是本人为了提升自己的技术能力而做的项目，为了技术提升，所以本项目采用了之前不常用的技术栈(Vue + TSX + Rails),
@@ -284,8 +308,8 @@
               <li>技术栈：Vue3、TSX、Pinia、VueRouter</li>
               <li>项目成果:
                 <span>
-                  <a href="https://github.com/Allengl/leaf-fe" target="_blank">源码链接</a>
-                  <a href="http://106.14.66.155:8080/" target="_blank">项目预览</a>
+                  <a href="https://github.com/Allengl/vue-leaf" target="_blank">源码链接</a>
+                  <a href="http://vue-leaf.deng.gl/" target="_blank">项目预览</a>
                 </span>
               </li>
             </ul>
@@ -345,7 +369,7 @@
       </div>
       </div>
     </section>
-    <section>
+    <!-- <section>
       <span class="iconfont icon-personal"></span>
       <h2>其他链接</h2>
       <hr>
@@ -363,7 +387,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <aside>
     <section>
@@ -391,7 +415,7 @@
           <li>熟练使用CSS Modules、styled components、unocss等CSS技术方案</li>
           <li>熟悉Webpack、Vite等构建工具的使用</li>
           <li>熟悉前后端交互技术Axios、了解web性能优化</li>
-          <li>熟练使用 ChatGPT 及其相关技术</li>
+          <li>熟练使用 ChatGPT</li>
         </ul>
       </div>
     </section>
@@ -403,7 +427,7 @@
         <dl class="skill-bar">
           <dt>TypeScript</dt>
           <dd>
-            <div style="width:60%"></div>
+            <div style="width:70%"></div>
           </dd>
           <dt>HTML</dt>
           <dd>
@@ -422,6 +446,28 @@
             <div style="width:80%"></div>
           </dd>
         </dl>
+      </div>
+    </section>
+    <section>
+      <span class="iconfont icon-personal"></span>
+      <h2>其他链接</h2>
+      <hr>
+      <div class="detail">
+        <!-- <div class="timeline-panel"> -->
+          <div class="detail">
+            <ul>
+              <li>
+                <a href="https://deng.gl">个人博客</a>
+              </li>
+              <li>
+                <a href="https://github.com/Allengl">我的GitHub</a>
+              </li>
+              <li>
+                <a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>
+              </li>
+            </ul>
+          <!-- </div> -->
+        </div>
       </div>
     </section>
   </aside>
