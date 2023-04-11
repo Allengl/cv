@@ -5,22 +5,70 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>邓郭龙-求职前端开发工程师</title>
+  <title>我的简历</title>
   <link rel="stylesheet" href="//at.alicdn.com/t/font_974371_cqiyab42oyq.css">
   <style>
-    /*css reset*/
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
-    ul {
-      margin-left: 1em;
+    body {
+      background: #eee;
+      margin: 20px 0;
     }
 
-    li {
-      margin-top: 10px;
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      /* color: #f60; */
+      background-color: #f3f3f3;
+      border-radius: 4px;
+      padding: 0 6px;
     }
 
     a {
@@ -29,453 +77,596 @@
       border-bottom: 1px solid;
     }
 
-    /*layout*/
-    body {
-      display: grid;
-      grid: auto auto / 1fr 300px 700px 1fr;
-    }
-
-    header {
-      background: lightgreen;
-      grid-column: 1 / span 4;
-      grid-row: 1;
-    }
-
-    main {
-      grid-column: 3;
-      grid-row: 2;
-    }
-
-    aside {
-
-      grid-column: 2;
-      grid-row: 2;
-    }
-
-    @media (max-width: 1000px) {
-      body {
-        grid: 100px 400px / 1fr 200px 400px 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      body {
-        grid: auto auto auto / 1fr;
-        padding: 0 10px 30px 10px;
-      }
-
-      header {
-        grid-column: 1;
-        grid-row: 1;
-      }
-
-      main {
-        grid-column: 1;
-        grid-row: 2;
-      }
-
-      aside {
-        grid-column: 1;
-        grid-row: 3;
-      }
-    }
-
-    /*common*/
-    body {
-      font: 14px/1.5 Arial;
-      color: #333;
-      padding-bottom: 30px;
-    }
-
-    /*page*/
-    header {
-      text-align: center;
-      padding: 30px;
-      background: #444;
-      color: #fff;
-    }
-
-    header img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-    }
-
-    header figcaption {
-      font-weight: bold;
-      margin-top: 10px;
-    }
-
-    header figure p {
-      margin-top: 10px;
-      color: #ccc;
-    }
-
-    section {
-      display: grid;
-      grid: auto auto / 50px 120px 1fr;
-      align-items: center;
-      margin-top: 20px;
-      padding: 10px;
-    }
-
-    section>.iconfont {
-      grid-row: 1;
-      grid-column: 1;
-      display: block;
-      width: 30px;
-      height: 30px;
-      background: #66a9a3;
-      border-radius: 50%;
-      font-size: 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    section>h2 {
-      grid-row: 1;
-      grid-column: 2;
-      font-size: 18px;
-    }
-
-    section>hr {
-      grid-row: 1;
-      grid-column: 3;
-      border: none;
-      height: 3px;
-      background: #66a9a3;
-    }
-
-    section>.detail {
-      grid-row: 2;
-      grid-column: 2/span 2
-    }
-
-    section .icon-list {
-      display: flex;
-      align-items: center;
-    }
-
-    section .icon-list .iconfont {
-      font-size: 20px;
-      margin-right: 10px;
-    }
-
-    section .skill-bar dt {
-      margin-top: 16px;
-    }
-
-    section .skill-bar dd {
-      height: 3px;
-      background: #eaeaea;
-    }
-
-    section .skill-bar dd div {
-      height: 100%;
-      background: #66a9a3;
-      margin-top: 10px;
-    }
-
-    section .timeline-panel {
-      display: grid;
-      grid: auto auto / 120px 1fr auto;
-      align-items: center;
-      margin-top: 16px;
-    }
-
-    section .timeline-panel .date {
-      grid-row: 1;
-      grid-column: 1;
-    }
-
-    section .timeline-panel>h3 {
-      grid-row: 1;
-      grid-column: 2;
-    }
-
-    section .timeline-panel .intro {
-      grid-row: 1;
-      grid-column: 3;
+    p,
+    li {
       color: #666;
     }
 
-    section .timeline-panel .detail {
-      grid-row: 2;
-      grid-column: 2/span 2;
-      margin-top: 10px;
+    strong {
+      font-weight: normal;
     }
 
-    footer {
-      display: grid;
-      grid-column: 1 / span 4;
-      grid-row: 4;
-      text-align: center;
-      font-size: 12px;
-      margin-top: 20px;
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
     }
 
-    .footer-link {
-      color: #999;
-      border: none;
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    li>p {
+      text-indent: 2em;
+    }
+
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      /* color: #f60; */
+      background-color: #f3f3f3;
+      border-radius: 6px;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+
+    .projects img {
+      padding-top: 35px;
+      padding-bottom: 15px;
+      width: 450px;
+
+    }
+
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper> :first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {}
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+
+  </style>
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
     }
 
   </style>
 </head>
 
 <body>
-  <header>
-    <figure>
-      <img src="https://i.postimg.cc/YCMvVK1c/gl.png" alt="头像">
-      <figcaption>邓郭龙</figcaption>
-      <p>应聘前端工程师</p>
-    </figure>
-  </header>
-  <main>
-    <section>
-      <span class="iconfont icon-education"></span>
+  <article>
+    <section class="bio">
+      <h1>邓郭龙</h1>
+      <!-- <img src="./images/cv.png" alt="" height="150px"> -->
+      <p>
+        男 | 22岁 | 前端开发工程师
+      </p>
+      <p>
+        手机：<a href="tel:17607216953">17607216953</a> | 微信：Allengl_ | 邮箱：<a
+          href="mailto:guolong613@gmail.com">guolong613@gmail.com</a>
+      </p>
+    </section>
+    <section class="education">
       <h2>教育经历</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date">09/2018~07/2022</div>
-          <h3>武汉华夏理工学院</h3>
-          <p class="intro">软件工程专业</p>
-          <div class="detail">
-          </div>
-        </div>
-      </div>
+      <p>
+        <span><time>2018年</time>~<time>2022年</time></span>
+        武汉华夏理工学院 软件工程专业 本科
+      </p>
     </section>
-    <section>
-      <span class="iconfont icon-experience"></span>
+    <section class="work">
       <h2>工作经历</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date">04/2022~至今</div>
-          <h3>上海汉得信息技术有限公司</h3>
-          <p class="intro">前端开发工程师</p>
-          <!-- <div class="detail">
-            <ul>
-              <li>
-                主要任务：负责公司内部前端项目的开发和维护。
-              </li>
-            </ul>
-          </div> -->
-        </div>
-      </div>
+      <p>
+        <span><time>2022/04</time>~<time>至今</time></span>
+        上海xxx有限公司 前端开发工程师
+      </p>
     </section>
-    <section>
-      <span class="iconfont icon-project"></span>
+    <section class="projects">
       <h2>项目经历</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date">03/2023~01/2023</div>
-          <h3>叶子记账——React</h3>
-          <div class="detail">
-            <ul>
-              <li>项目介绍：这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> 构建的记账应用，使用 ReactRouter 来做路由鉴权和路由守卫，使用
-                Zustand 来做全局状态管理，
-                ，项目主要采用了 UnoCSS 和 styled-component CSS技术方案，为了适配移动端浏览器，放弃了全屏，使用 vh-check 来整高度，使页面刚好填满画面，使用 JWT 来做登录鉴权，
-                在没有后端 api 的情况下，用 Mock 和 fakerjs 来模拟请求数据，封装了 useAjax Hooks 让拦截器读取JWT，进行统一的错误处理和自动Loading，使用 errorElement +
-                loader 实现路由守卫，使用 SWR 来优化数据请求，用 useSWRInfinite 实现无限加载数据，可视化部分引入 Echarts 模块，实现了折线图和饼图两种数据的可视化，提升网站性能方面，采用动态 import 和
-                Code Splitting
-                项目使用动态 import + suspense 来动态加载组件,用 manualChunks 对 Echarts 和 node_modules 进行手动分块
-              </li>
-              </li>
-              <li>技术栈：React、TSX、ReactRouter、Vite</li>
-              <li>项目成果:
-                <span>
-                  <a href="https://github.com/Allengl/react-leaf" target="_blank">源码链接</a>
-                  <a href="https://react-leaf.deng.gl" target="_blank">项目预览</a>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-panel">
-          <div class="date">08/2022~01/2023</div>
-          <h3>叶子记账——Vue</h3>
-          <div class="detail">
-            <ul>
-              <li>项目介绍：本项目是本人为了提升自己的技术能力而做的项目，为了技术提升，所以本项目采用了之前不常用的技术栈(Vue + TSX + Rails),
-                并且项目尽量少采用第三方 UI 组件，来提升自己的封装能力，项目使用 Vite3 来构建，主要围绕记账一个功能实现，采用了 CSS Modules 的CSS技术方案，
-                使用 VueRouter 来做路由鉴权和路由守卫，使用 Pinia 来做全局状态管理，使用 Echarts 实现可视化，引入 Vant UI 实现一些功能复杂的组件，
-                使用 JWT 来做登录鉴权，封装了 Axios 实现自动Loading，自动的路由守卫，并且项目大量使用插槽和 v-model 来减少代码重复，使用自制 Vite SVG Sprites 优化
-                svg图片，使用 Mock 和 fakerjs 来模拟请求数据。
-              </li>
-              </li>
-              <li>技术栈：Vue3、TSX、Pinia、VueRouter</li>
-              <li>项目成果:
-                <span>
-                  <a href="https://github.com/Allengl/vue-leaf" target="_blank">源码链接</a>
-                  <a href="http://vue-leaf.deng.gl/" target="_blank">项目预览</a>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-panel">
-          <div class="date">06/2022~07/2022</div>
-          <h3>大屏可视化</h3>
-          <div class="detail">
-            <ul>
-              <li>项目介绍：项目使用了echarts来实现可视化，页面使用了 Grid 和 Flex 布局，为了适应所有屏幕，
-                使用了动态rem的方案，项目中包含的图例有柱形图，折线图，饼图，地图等，并且所有图例
-                都可以实时更新数据并辅以动画交互。
-              </li>
-              <li>技术栈：React、TypeScript、Echarts</li>
-              <li>项目成果:
-                <span>
-                  <a href="https://github.com/Allengl/bigscreen" target="_blank">源码链接</a>
-                  <a href="https://allengl.github.io/bigscreen-website/#/" target="_blank">项目预览</a>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-panel">
-          <div class="date">01/2022~05/2022</div>
-          <h3>咕噜咕噜UI</h3>
-          <div class="detail">
-            <ul>
-              <li>项目介绍： 这是一个使用 Vue3 composition API 构建的 UI 库，目前仅有四种不同的组件，但我可能会在以后添加更多，它可以在 npm 上下载安装，
-                编写这个库的过程是一个非常有价值的学习经历，我遇到了一些之前从未遇到过的问题，比如如何使用函数打开对话框窗口，对话框元素应该放在DOM中的哪个位置，
-                如何对CSS进行结构化，以避免用户创建组件时出现问题
-                。
-              </li>
-              <li>技术栈：Vue3 / TypeScript / Vite</li>
-              <li>项目成果:
-                <span>
-                  <a href="https://github.com/Allengl/gulu-UI">源码链接</a>
-                  <a href="https://allengl.github.io/gulu-ui-website/">项目预览</a>
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- <div class="timeline-panel">
-          <div class="date">12/2022~03/2023</div>
-          <h3>提单小程序</h3>
-          <div class="detail">
-            <ul>
-              <li>项目介绍：项目使用Taro进行构建，实现了在小程序内进行工单提报功能，使用第三方UI库Nut UI进行组件封装，采用 CSS modules 的 CSS 方案，
-                封装了 Axios 实现自动加载，封装了 validator 实现表单验证，封装了 editor 实现富文本编辑器。
-              </li>
-              <li>技术栈：Vue3、TSX、Nut UI</li>
-            </ul>
-          </div>
-        </div> -->
-      </div>
-      </div>
-    </section>
-    <!-- <section>
-      <span class="iconfont icon-personal"></span>
-      <h2>其他链接</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="detail">
-            <ul>
-              <li>
-                <a href="https://deng.gl">个人博客</a>
-              </li>
-              <li>
-                <a href="https://github.com/Allengl">我的GitHub</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
-  </main>
-  <aside>
-    <section>
-      <span class="iconfont icon-personal"></span>
-      <h2>基本信息</h2>
-      <hr>
-      <div class="detail">
-        <div class="icon-list"><span class="iconfont icon-phone"></span>17607216953</div>
-        <div class="icon-list"><span class="iconfont icon-wechat"></span>Allengl_</div>
-        <div class="icon-list"><span class="iconfont icon-email"></span>guolong613@gmail.com</div>
-        <div class="icon-list"><span class="iconfont icon-education"></span>本科</div>
-      </div>
-    </section>
-    <section>
-      <span class="iconfont icon-introduction"></span>
-      <h2>掌握技能</h2>
-      <hr>
-      <div class="detail">
-        <ul>
-          <li>掌握HTML5/CSS3，熟悉Flex布局、Grid布局、移动端适配等</li>
-          <li>熟悉TypeScript，能够使用TypeScript进行开发</li>
-          <li>熟悉React技术栈如React Router、Hooks、Redux等技术，能够熟练使用React进行开发</li>
-          <li>熟悉Vue技术栈如Vue Router、Pinia、Vite及相关流行库的使用，理解其重要概念</li>
-          <li>熟悉微信小程序开发，如使用Taro多端框架构建小程序</li>
-          <li>熟练使用CSS Modules、styled components、unocss等CSS技术方案</li>
-          <li>熟悉Webpack、Vite等构建工具的使用</li>
-          <li>熟悉前后端交互技术Axios、了解web性能优化</li>
-          <li>熟练使用 ChatGPT</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <span class="iconfont icon-skills"></span>
-      <h2>技能图谱</h2>
-      <hr>
-      <div class="detail">
-        <dl class="skill-bar">
-          <dt>TypeScript</dt>
-          <dd>
-            <div style="width:70%"></div>
-          </dd>
-          <dt>HTML</dt>
-          <dd>
-            <div style="width:80%"></div>
-          </dd>
-          <dt>CSS3</dt>
-          <dd>
-            <div style="width:70%"></div>
-          </dd>
-          <dt>Vue</dt>
-          <dd>
-            <div style="width:80%"></div>
-          </dd>
-          <dt>React</dt>
-          <dd>
-            <div style="width:80%"></div>
-          </dd>
-        </dl>
-      </div>
-    </section>
-    <section>
-      <span class="iconfont icon-personal"></span>
-      <h2>其他链接</h2>
-      <hr>
-      <div class="detail">
-        <!-- <div class="timeline-panel"> -->
-          <div class="detail">
-            <ul>
-              <li>
-                <a href="https://deng.gl">个人博客</a>
-              </li>
-              <li>
-                <a href="https://github.com/Allengl">我的GitHub</a>
-              </li>
-              <li>
-                <a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>
-              </li>
-            </ul>
-          <!-- </div> -->
-        </div>
-      </div>
-    </section>
-  </aside>
-</body>
-<footer>
-  <a class="footer-link" href="https://www.freepik.com/free-vector/professional-resume-template_837838.htm">Designed by
-    Freepik</a>
-</footer>
+      <ol>
+        <li>
+          <header>
+            <h3>基于 React 的叶子记账应用</h3>
+            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
+            <img src="images/gulu.png" alt="">
+          </a> -->
+            <span>
+              <a href="https://react-leaf.deng.gl">项目预览</a>
+              <a href="https://github.com/Allengl/react-leaf">GitHub 源码链接</a>
+            </span>
+          </header>
+          <p>
+            技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Vite</strong> <strong>UnoCSS</strong>
+          </p>
+          <ul>
+            <li>
+              <!-- <p style="text-indent:2em"> -->
+              <b>• 项目描述：</b>
+            </li>
+            <li>
+              <p>
+                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> / <b>UnoCSS</b> 构建的记账应用，使用了 React Hooks, React
+                Router,
+                Zustand 等工具库，构建的单页面记账页面。
+              <p>
+                用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
+                同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能。
+              </p>
+              <p>
+                用户记录的各项数据通过 Ruby on Rails 后端
+                提供的 API 进行数据的获取和存储。
+              </p>
+              <p>
+                可适配手机、平板、PC 端，同时具备响应式布局，适配不同分辨率的设备，提升用户体验。
+              </p>
+              <p>
+                主要页面有：登录页面、记账页面、新增标签页面、统计页面、记账信息可视化页面。
+              </p>
+              <p>
+                记账数据可以查看本月、上月、今年以及自定义时间的收支情况，同时可以查看本月、上月、两月前的收支情况的饼图、折线图。
+              </p>
+              <p>
+                项目构建过程中，我深入理解了和实践了 React 和 TypeScript 的使用方法，同时也对 React Hooks 和 React Router 等工具库有了更深的理解。
+              </p>
+              </p>
+            </li>
+            <li>
+              <b>• 项目经验：</b>
 
+            </li>
+            <li>
+              <p>
+                使用 ReactRouter 来做路由鉴权和路由守卫，使用 Zustand 来做全局状态管理。
+              </p>
+              <p>
+                主要采用了 UnoCSS 和 styled-component CSS技术方案，由于 UnoCSS 是静态渲染的，所以还采用了 styled-component
+                来应对动态渲染 CSS 的情况。
+              </p>
+              <p>
+                为了适配移动端浏览器，放弃了全屏，使用 vh-check 来整高度，使页面刚好填满画面。
+              </p>
+              <p>
+                在没有后端 api 的情况下，用 Mock 和 fakerjs 来模拟请求数据。
+              </p>
+              <p>
+                使用 JWT 来做登录鉴权，封装了 useAjax Hooks 让拦截器读取JWT，进行统一的错误处理和自动Loading，使用 errorElement + loader 实现路由守卫。
+              </p>
+              <p>
+                使用 SWR 来优化数据请求，用 useSWRInfinite 实现无限加载数据。
+              </p>
+              <p>
+                可视化部分引入 Echarts 模块，实现了折线图和饼图两种数据的可视化。
+              </p>
+              <p>
+                提升网站性能方面，采用动态 import 和 Code Splitting 项目使用动态 import + suspense 来动态加载组件,用 manualChunks 对 Echarts 和
+                node_modules 进行手动分块，大大
+                提高了网站的加载速度。
+              </p>
+              <p>
+                后端接口方面使用 Ruby on Rails 实现，使用 rspec 进行测试驱动开发，用户数据使用 PostgreSQL 存储
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>基于 Vue3 的叶子记账应用</h3>
+            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
+            <img src="images/gulu.png" alt="">
+          </a> -->
+            <span>
+              <a href="https://vue-leaf.deng.gl">项目预览</a>
+              <a href="https://github.com/Allengl/vue-leaf">GitHub 源码链接</a>
+            </span>
+          </header>
+          <p>
+            技术栈： <strong>Vue3</strong> <strong>TSX</strong> <strong>Vite</strong>
+          </p>
+          <ul>
+            <li>
+              <!-- <p style="text-indent:2em"> -->
+              <b>• 项目描述：</b>
+            </li>
+            <li>
+              <p>
+                本项目是本人为了提升自己的技术能力而做的项目，为了技术提升，所以本项目采用了之前不常用的技术栈 <b>Vue3</b> / <b>TSX</b> / <b>Vite</b> 构建的记账应用，
+                使用了 Vue Router, Pinia 等工具库
+              <p>
+                用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
+                同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能。
+              </p>
+              <p>
+                用户记录的各项数据通过 Ruby on Rails 后端提供的 API 进行数据的请求和存储。
+              </p>
+              <p>
+                可适配手机、平板、PC 端，同时具备响应式布局，适配不同分辨率的设备，提升用户体验。
+              </p>
+              <p>
+                主要页面有：登录页面、记账页面、新增和删除标签页面、统计页面、记账信息可视化页面。
+              </p>
+              <p>
+                记账数据可以查看本月、上月、今年以及自定义时间的收支情况，同时可以查看本月、上月及定义时间的收支情况的饼图、折线图。
+              </p>
+              <p>
+                项目构建过程中，我深入理解了和实践了 Vue 3 Composition API 和 如何在 Vue 中使用 TSX，同时也对 Vue Router 和 Pinia 等工具库有了深入的理解。
+              </p>
+              </p>
+            </li>
+            <li>
+              <b>• 项目经验：</b>
+
+            </li>
+            <li>
+              <p>
+                使用 VueRouter 来做路由鉴权和路由守卫，使用 Pinia 来做全局状态管理。
+              </p>
+              <p>
+                主要采用了 CSS Modules 的技术方案来实现 CSS 渲染
+              </p>
+              <p>
+                使用 JWT 来做登录鉴权，封装了 Axios 实现自动Loading，自动的路由守卫，使用 beforeEach 做登录的权限控制
+              </p>
+              <p>
+                项目大量使用插槽和 v-model 来减少代码重复
+              </p>
+              <p>
+                使用 Echarts 实现可视化，引入 Vant UI 实现一些功能复杂的组件
+              </p>
+              <p>
+                使用自制 Vite SVG Sprites 插件优化 svg图片，将多个 svg 图片变成一个大的 svg
+              </p>
+              <p>
+                使用 Mock 和 fakerjs 来模拟请求数据
+              </p>
+            </li>
+          </ul>
+        </li>
+         <li>
+          <header>
+            <h3>基于 React 的大屏可视化</h3>
+            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
+            <img src="images/bigscreen.png">
+          </a> -->
+            <span>
+              <a href="https://allengl.github.io/bigscreen-website/#/">项目预览</a>
+              <a href="https://github.com/Allengl/bigscreen">GitHub 源码链接</a>
+            </span>
+          </header>
+          <p>
+            技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Echarts</strong>
+          </p>
+          <ul>
+            <li>
+              <!-- <p style="text-indent:2em"> -->
+              <b>• 项目描述：</b>
+            </li>
+            <li>
+              <p>
+                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Echarts</b> 构建的大屏可视化界面
+              <p>
+                页面使用了 Grid 和 Flex 布局，并且使用 Echarts 来实现数据可视化
+              </p>
+              <p>
+                项目中包含的图例有柱形图，折线图，饼图，地图等，并且所有图例 都可以实时更新数据并辅以动画交互。
+              </p>
+            </li>
+            <li>
+              <b>• 项目经验：</b>
+            </li>
+            <li>
+              <p>
+                项目使用了echarts来实现数据的可视化，了解了 Echarts 的属性如何控制图表的样式
+              </p>
+              <p>
+                为了适应所有屏幕， 页面采用了动态rem的方案
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <header>
+            <h3>基于 Vue 3 的 gulugulu-UI 框架</h3>
+            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
+            <img src="images/bigscreen.png">
+          </a> -->
+            <span>
+              <a href="https://allengl.github.io/gulu-ui-website/">项目预览</a>
+              <a href="https://github.com/Allengl/gulu-UI">GitHub 源码链接</a>
+            </span>
+          </header>
+          <p>
+            技术栈： <strong>Vue3</strong> <strong>TypeScript</strong> <strong>Vite</strong>
+          </p>
+          <ul>
+            <li>
+              <!-- <p style="text-indent:2em"> -->
+              <b>• 项目描述：</b>
+            </li>
+            <li>
+              <p>
+                这是一款基于 <b>Vue3</b> / <b>TypeScript</b> / <b>Vite</b> 开发的 UI 框架
+              <p>
+                目前仅有四种不同的组件 Switch 组件，Button 组件，Dialog 组件，Tabs 组件，
+                但我可能会在以后添加更多，它可以在 npm 上下载安装。
+              </p>
+              <p>
+                组件样式采用了简洁风的设计，简单易用，组件源代码也非常简洁，文档中也有良好的代码提示。
+              </p>
+              <p>
+                UI组件封装过程中，让我对 Vue3 composition API 有了深入的理解，对 TypeScript 规范有了新的认识。
+              </p>
+              </p>
+            </li>
+            <li>
+              <b>• 项目经验：</b>
+            </li>
+            <li>
+              <p>
+                使用 Vite 前端开发工具进行构建，其对于 Vue3 和 TypeScript 组合支持性极佳，开盒即用，项目构建快捷高效，
+                开发工程中项目各个组件拆分合理，分析需求，分解思路清晰，可实现高效模块化编程。
+              </p>
+              <p>
+                使用 VueRouter 搭建 SFC 单文件应用，避免发送不必要的服务器请求，降低负担
+              </p>
+              <p>
+                Vue 3有许多新特性，其中最突出的一点就是组合式 API，围绕 setup 入口函数进行编程，打破 Vue 2 的模板语法固有模式
+                同时两者也可以结合使用。
+              </p>
+              <p>
+                编写这个库的过程是一个非常有价值的学习经历，我遇到了一些之前从未遇到过的问题，比如如何使用函数打开对话框窗口，
+                对话框元素应该放在DOM中的哪个位置， 如何对CSS进行结构化，以避免用户创建组件时出现问题
+              </p>
+            </li>
+          </ul>
+        </li>
+        <!-- <li class="page2">
+          <header>
+            <h3>旺财记账</h3>
+            <span>
+              <a href="https://github.com/Allen-XiaoDeng/wangcai-react">源码链接</a>
+              <a href="http://guolong.xyz">项目预览</a>
+            </span>
+          </header>
+          <p>
+            技术栈：<strong>React</strong> / <strong>Hooks</strong> / <strong>Node.js</strong> / <strong>Vite</strong>
+          </p>
+          <p style="text-indent:2em">
+            这是我从自己的需求出发，开发的一款记账应用，特点是随时随地快速记账，我每天都用它来记账。该项目是基于前端框架 React 实现,使用 <strong>React-hooks API</strong> 来编写, 使用
+            <strong>React-Router</strong>来实现路由切换,
+            使用 <strong>自定义Hooks</strong>来实现全局状态管理, 使用 <strong>localStorage</strong>来进行本地数据存储,服务端采用Node后端框架
+            <strong>eggjs</strong>来搭建,使用<strong>Mysql数据库</strong>来存储用户信息。
+          </p>
+        </li> -->
+      </ol>
+    </section>
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <!-- <div id="skills"></div> -->
+        <ul>
+          <li>
+          <p>掌握HTML5/CSS3，熟悉Flex布局、Grid布局、移动端适配等</p>
+          <p>熟悉TypeScript，能够使用TypeScript进行开发</p>
+          <p>熟悉React技术栈如React Router、Hooks、Zustant等技术，能够熟练使用React进行开发</p>
+          <p>熟悉Vue技术栈如Vue Router、Pinia、Vite及相关流行库的使用，理解其重要概念</p>
+          <p>熟练使用CSS Modules、Styled components、UnoCSS等CSS技术方案</p>
+          <p>熟悉Webpack、Vite等构建工具的使用</p>
+          <p>熟悉前后端交互技术Axios、了解web性能优化</p>
+          <p>熟悉微信小程序开发，如使用Taro多端框架构建小程序</p>
+          <p>熟悉 git 以及 linux 命令行的基本操作</p>
+          <p>了解一些后端的基础知识如 RESTful、JWT、后端单元测试等</p>
+          <p>对 Docker 容器化开发有一定了解</p>
+          <p>熟练使用 ChatGPT</p> 
+          </li>
+        </ul>
+      <!-- </div> -->
+    </section>
+    <section class="openSource">
+      <h2>个人项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>咕噜咕噜导航</h3>
+            <span>
+              <a href="https://github.com/Allengl/Project-nav-js">源码链接</a>
+              <a href="https://Allengl.github.io/Project-nav-js/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是我基于 <strong>原生JavaScript</strong> 自制的前端站点导航，可以方便收藏自己常去的一些网站
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>自己写的 DOM 库</h3>
+            <a href="https://github.com/Allengl/dom-2">源码链接</a>
+          </header>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
+        </li>
+        <li>
+          <header>
+            <h3>会动的星之卡比</h3>
+            <span>
+              <a href="https://github.com/Allengl/Kirby">源码链接</a>
+              <a href="https://Allengl.github.io/Kirby/dist/index.html">项目预览</a>
+            </span>
+          </header>
+          <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        </li>
+        <li>
+          <header>
+            <h3>简易画板</h3>
+            <span>
+              <a href="https://github.com/Allengl/canvas-demo-1">源码链接</a>
+              <a href="https://Allengl.github.io/canvas-demo-1/">项目预览</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        </li>
+      </ul>
+    </section>
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>，目前已有 40 篇技术文章</li>
+        <li><a href="https://github.com/Allengl">我的 GitHub</a>，过去三个月有近 300 次提交</li>
+        <li><a href="https://deng.gl/">我的个人博客</a></li>
+      </ul>
+    </section>
+
+  </article>
+</body>
 
 </html>
