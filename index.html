@@ -150,6 +150,13 @@
 
   </style>
   <style>
+    .education{}
+    .education>p{
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <style>
     .skills {}
 
     #skills {
@@ -180,7 +187,9 @@
       color: #666;
     }
 
-    .skills>.wrapper strong {}
+    .skills>.wrapper strong {
+      
+    }
 
     .skills>.wrapper>ul>li {
       line-height: 1.2;
@@ -246,6 +255,10 @@
       margin-left: auto;
     }
 
+    .jobs>p {
+      display: flex;
+      justify-content: space-between;
+    }
   </style>
 
 
@@ -295,22 +308,29 @@
         男 | 22岁 | 前端开发工程师
       </p>
       <p>
-        手机：<a href="tel:17607216953">17607216953</a> | 微信：Allengl_ | 邮箱：<a
-          href="mailto:guolong613@gmail.com">guolong613@gmail.com</a>
+        手机：<a href="tel:17607216953">17607216953</a> | 微信：Allengl_ | 邮箱：
+        <a href="mailto:guolong613@gmail.com">guolong613@gmail.com</a> | 博客：
+        <a href="https://deng.gl/">deng.gl</a>
+      </p>
+      <p>
+        <a href="https://www.zhihu.com/people/fall-92-99">知乎</a> 目前已有 40 篇技术文章 | 
+        <a href="https://github.com/Allengl">GitHub</a> 过去三个月有近 300 次提交
       </p>
     </section>
     <section class="education">
       <h2>教育经历</h2>
       <p>
         <span><time>2018年</time>~<time>2022年</time></span>
-        武汉华夏理工学院 软件工程专业 本科
+        <span>武汉华夏理工学院</span> 
+        <span>软件工程专业 本科</span> 
       </p>
     </section>
-    <section class="work">
+    <section class="jobs">
       <h2>工作经历</h2>
       <p>
         <span><time>2022/04</time>~<time>至今</time></span>
-        上海xxx有限公司 前端开发工程师
+        <span>上海汉得信息技术公司</span>   
+       <span> 前端开发工程师</span>
       </p>
     </section>
     <section class="projects">
@@ -598,18 +618,18 @@
         <!-- <div id="skills"></div> -->
         <ul>
           <li>
-          <p>掌握HTML5/CSS3，熟悉Flex布局、Grid布局、移动端适配等</p>
-          <p>熟悉TypeScript，能够使用TypeScript进行开发</p>
-          <p>熟悉React技术栈如ReactRouter、Hooks、Zustand等技术，能够熟练使用React进行开发</p>
-          <p>熟悉Vue技术栈如VueRouter、Pinia、Vite及相关流行库的使用，理解其重要概念</p>
-          <p>熟练使用CSS Modules、Styled components、UnoCSS等CSS技术方案</p>
-          <p>熟悉Webpack、Vite等构建工具的使用</p>
-          <p>熟悉前后端交互技术Axios、了解web性能优化</p>
-          <p>熟悉微信小程序开发，如使用Taro多端框架构建小程序</p>
-          <p>熟悉 git 以及 linux 命令行的基本操作</p>
-          <p>了解一些后端的基础知识如 RESTful、JWT、后端单元测试等</p>
-          <p>对 Docker 容器化开发有一定了解</p>
-          <p>熟练使用 ChatGPT</p> 
+          <p>掌握HTML5/CSS3，熟悉 <strong>Flex布局</strong> 、<strong>Grid布局</strong> 、移动端适配等</p>
+          <p>熟悉 <strong>TypeScript</strong> ，能够使用TypeScript进行开发</p>
+          <p>熟悉React技术栈如 <strong>ReactRouter</strong> 、<strong>Hooks</strong> 、<strong>Zustand</strong>等技术，能够熟练使用React进行开发</p>
+          <p>熟悉Vue技术栈如 <strong> VueRouter</strong>、<strong>Pinia</strong> 、<strong>Vite</strong>及相关流行库的使用，理解其重要概念</p>
+          <p>熟练使用 <strong>CSS Modules</strong> 、<strong>Styled components</strong> 、<strong>UnoCSS</strong> 等CSS技术方案</p>
+          <p>熟悉 <strong>Webpack</strong> 、<strong>Vite</strong> 等构建工具的使用</p>
+          <p>熟悉前后端交互技术 <strong>Axios</strong> 、了解<strong>web性能优化</strong></p>
+          <p>熟悉 <strong>微信小程序</strong> 开发，如使用 <strong>Taro</strong> 多端框架构建小程序</p>
+          <p>熟悉 <strong>git</strong> 及 <strong>linux</strong> 命令行的基本操作</p>
+          <p>了解一些后端的基础知识如 <strong>RESTful</strong>、<strong>JWT</strong>、后端<strong>单元测试</strong>等</p>
+          <p>对 <strong>Docker</strong> 容器化开发有一定了解</p>
+          <p>熟练使用 <strong>ChatGPT</strong> </p> 
           </li>
         </ul>
       <!-- </div> -->
@@ -658,15 +678,14 @@
         </li>
       </ul>
     </section>
-    <section class="others">
-      <h2>其他链接</h2>
+    <!-- <section class="others">
+    <h2>其他链接</h2>
       <ul>
-        <li><a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>，目前已有 40 篇技术文章</li>
-        <li><a href="https://github.com/Allengl">我的 GitHub</a>，过去三个月有近 300 次提交</li>
-        <li><a href="https://deng.gl/">我的个人博客</a></li>
+      <li><a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>，目前已有 40 篇技术文章</li>
+      <li><a href="https://github.com/Allengl">我的 GitHub</a>，过去三个月有近 300 次提交</li>
+      <li><a href="https://deng.gl/">我的个人博客</a></li>
       </ul>
-    </section>
-
+    </section> -->
   </article>
 </body>
 
