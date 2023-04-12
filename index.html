@@ -13,7 +13,7 @@
     }
 
     body {
-      background: #eee;
+      background: white;
       margin: 20px 0;
     }
 
@@ -64,11 +64,9 @@
     }
 
     strong {
-      font-weight: normal;
+      font-weight: bold;
       /* color: #f60; */
-      background-color: #f3f3f3;
-      border-radius: 4px;
-      padding: 0 6px;
+
     }
 
     a {
@@ -80,10 +78,6 @@
     p,
     li {
       color: #666;
-    }
-
-    strong {
-      font-weight: normal;
     }
 
     h3,
@@ -119,7 +113,8 @@
     .projects strong {
       /* color: #f60; */
       background-color: #f3f3f3;
-      border-radius: 6px;
+      border-radius: 6px; 
+      padding: 0 6px;
     }
 
     .projects>ol {
@@ -335,6 +330,7 @@
     </section>
     <section class="projects">
       <h2>项目经历</h2>
+      
       <ol>
         <li>
           <header>
@@ -353,12 +349,13 @@
           <ul>
             <li>
               <!-- <p style="text-indent:2em"> -->
-              <b>• 项目描述：</b>
+              <b>项目描述：</b>
             </li>
             <li>
               <p>
                 这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> / <b>UnoCSS</b> 构建的记账应用，使用了 React Hooks, React
                 Router,Zustand 等工具库，构建的单页面记账页面
+              </p>
               <p>
                 用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
                 同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能
@@ -379,11 +376,9 @@
               <p>
                 项目构建过程中，我深入理解了和实践了 React 和 TypeScript 的使用方法，同时也对 React Hooks 和 React Router 等工具库有了更深的理解
               </p>
-              </p>
             </li>
             <li>
-              <b>• 项目经验：</b>
-
+              <b>项目经验：</b>
             </li>
             <li>
               <p>
@@ -435,7 +430,7 @@
           <ul>
             <li>
               <!-- <p style="text-indent:2em"> -->
-              <b>• 项目描述：</b>
+              <b>项目描述：</b>
             </li>
             <li>
               <p>
@@ -463,7 +458,7 @@
               </p>
             </li>
             <li>
-              <b>• 项目经验：</b>
+              <b>项目经验：</b>
 
             </li>
             <li>
@@ -511,32 +506,44 @@
           <ul>
             <li>
               <!-- <p style="text-indent:2em"> -->
-              <b>• 项目描述：</b>
+              <b>项目描述：</b>
             </li>
             <li>
               <p>
                 这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Echarts</b> 构建的大屏可视化界面
               <p>
-                页面使用了 Grid 和 Flex 布局，并且使用 Echarts 来实现数据可视化
+                页面将 Grid 布局和 Flex 布局结合起来，实现了页面的响应式布局
+              </p>
+              <p>
+                并且使用 Echarts 来实现数据可视化，实现了数据的实时更新
+              </p>
+              <p>
+                页面采用了动态rem的方案，来适配所有屏幕
               </p>
               <p>
                 项目中包含的图例有柱形图，折线图，饼图，地图等，并且所有图例 都可以实时更新数据并辅以动画交互
               </p>
             </li>
             <li>
-              <b>• 项目经验：</b>
+              <b>项目经验：</b>
             </li>
             <li>
               <p>
                 项目使用了echarts来实现数据的可视化，了解了 Echarts 的属性如何控制图表的样式
               </p>
               <p>
-                页面采用了动态rem的方案，页面左右居中，上下居中，四周留白，来适配所有屏幕
+                采用动态rem的方案来适配各种尺寸的屏幕，保持页面始终上下居中，左右居中
+              </p>
+              <p>
+                放弃使用像素，编写了一个 px() 函数来适配所有 div
+              </p>
+              <p>
+                通过这个项目，我掌握了大屏可视化项目的制作技巧
               </p>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="page2">
           <header>
             <h3>基于 Vue 3 的 gulugulu-UI 框架</h3>
             <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
@@ -553,7 +560,7 @@
           <ul>
             <li>
               <!-- <p style="text-indent:2em"> -->
-              <b>• 项目描述：</b>
+              <b>项目描述：</b>
             </li>
             <li>
               <p>
@@ -571,7 +578,7 @@
               </p>
             </li>
             <li>
-              <b>• 项目经验：</b>
+              <b>项目经验：</b>
             </li>
             <li>
               <p>
@@ -618,18 +625,15 @@
         <!-- <div id="skills"></div> -->
         <ul>
           <li>
-          <p>掌握HTML5/CSS3，熟悉 <strong>Flex布局</strong> 、<strong>Grid布局</strong> 、移动端适配等</p>
-          <p>熟悉 <strong>TypeScript</strong> ，能够使用TypeScript进行开发</p>
+          <p>熟悉 <strong>TypeScript</strong>，掌握HTML5/CSS3，熟悉 <strong>Flex布局</strong> 、<strong>Grid布局</strong> 、移动端适配等</p>
           <p>熟悉React技术栈如 <strong>ReactRouter</strong> 、<strong>Hooks</strong> 、<strong>Zustand</strong>等技术，能够熟练使用React进行开发</p>
           <p>熟悉Vue技术栈如 <strong> VueRouter</strong>、<strong>Pinia</strong> 、<strong>Vite</strong>及相关流行库的使用，理解其重要概念</p>
           <p>熟练使用 <strong>CSS Modules</strong> 、<strong>Styled components</strong> 、<strong>UnoCSS</strong> 等CSS技术方案</p>
-          <p>熟悉 <strong>Webpack</strong> 、<strong>Vite</strong> 等构建工具的使用</p>
-          <p>熟悉前后端交互技术 <strong>Axios</strong> 、了解<strong>web性能优化</strong></p>
+          <p>熟悉前后端交互技术 <strong>Axios</strong> 、了解<strong> web性能优化</strong>和 <strong>Webpack</strong> 、<strong>Vite</strong> 等构建工具的使用</p>
           <p>熟悉 <strong>微信小程序</strong> 开发，如使用 <strong>Taro</strong> 多端框架构建小程序</p>
-          <p>熟悉 <strong>git</strong> 及 <strong>linux</strong> 命令行的基本操作</p>
-          <p>了解一些后端的基础知识如 <strong>RESTful</strong>、<strong>JWT</strong>、后端<strong>单元测试</strong>等</p>
-          <p>对 <strong>Docker</strong> 容器化开发有一定了解</p>
-          <p>熟练使用 <strong>ChatGPT</strong> </p> 
+          <p>熟悉 <strong>git</strong> 及 <strong>linux</strong> 命令行的基本操作，了解一些后端的基础知识如 <strong>RESTful</strong>、<strong>JWT</strong>、<strong>单元测试</strong>等</p>
+          <p>熟练使用 <strong>ChatGPT</strong>，对 <strong>Docker</strong> 容器化开发有一定了解 </p>
+          <p> </p> 
           </li>
         </ul>
       <!-- </div> -->
@@ -678,14 +682,14 @@
         </li>
       </ul>
     </section>
-    <!-- <section class="others">
-    <h2>其他链接</h2>
+    <section class="others">
+    <!-- <h2>其他链接</h2>
       <ul>
       <li><a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>，目前已有 40 篇技术文章</li>
       <li><a href="https://github.com/Allengl">我的 GitHub</a>，过去三个月有近 300 次提交</li>
       <li><a href="https://deng.gl/">我的个人博客</a></li>
-      </ul>
-    </section> -->
+      </ul> -->
+    </section>
   </article>
 </body>
 
