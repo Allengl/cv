@@ -25,7 +25,6 @@
       overflow: auto;
       padding: 1em;
     }
-
   </style>
   <style media="print">
     body {
@@ -36,7 +35,6 @@
       page-break-before: always;
       margin-top: 30px;
     }
-
   </style>
   <style>
     body {}
@@ -100,7 +98,6 @@
     li>p {
       text-indent: 2em;
     }
-
   </style>
 
   <style>
@@ -113,7 +110,7 @@
     .projects strong {
       /* color: #f60; */
       background-color: #f3f3f3;
-      border-radius: 6px; 
+      border-radius: 6px;
       padding: 0 6px;
     }
 
@@ -142,11 +139,11 @@
       width: 450px;
 
     }
-
   </style>
   <style>
-    .education{}
-    .education>p{
+    .education {}
+
+    .education>p {
       display: flex;
       justify-content: space-between;
     }
@@ -182,15 +179,12 @@
       color: #666;
     }
 
-    .skills>.wrapper strong {
-      
-    }
+    .skills>.wrapper strong {}
 
     .skills>.wrapper>ul>li {
       line-height: 1.2;
       margin-bottom: 8px;
     }
-
   </style>
   <style>
     .openSource {}
@@ -216,7 +210,6 @@
     }
 
     .openSource h3 {}
-
   </style>
   <style>
     .jobs {}
@@ -290,7 +283,6 @@
         margin: 0;
       }
     }
-
   </style>
 </head>
 
@@ -300,51 +292,47 @@
       <h1>邓郭龙</h1>
       <!-- <img src="./images/cv.png" alt="" height="150px"> -->
       <p>
-        男 | 23岁 | 前端开发工程师
+        男 | 24岁 | 前端开发工程师
       </p>
       <p>
         手机：<a href="tel:17607216953">17607216953</a> | 微信：Allengl_ | 邮箱：
-        <a href="mailto:guolong613@gmail.com">guolong613@gmail.com</a> | 博客：
-        <a href="https://deng.gl/">deng.gl</a>
-      </p>
-      <p>
-        <a href="https://www.zhihu.com/people/fall-92-99">知乎</a> 目前已有 90 篇技术文章 | 
-        <a href="https://github.com/Allengl">GitHub</a> 过去一年有近 600 次提交
+        <a href="mailto:guolong613@gmail.com">guolong613@gmail.com</a> | github：
+        <a href="https://github.com/Allengl">Allengl</a>
       </p>
     </section>
     <section class="education">
       <h2>教育经历</h2>
       <p>
         <span><time>2018年</time>~<time>2022年</time></span>
-        <span>武汉华夏理工学院</span> 
-        <span>软件工程专业 本科</span> 
+        <span>武汉华夏理工学院</span>
+        <span>软件工程专业 本科</span>
       </p>
     </section>
     <section class="jobs">
       <h2>工作经历</h2>
       <p>
         <span><time>2022/04</time>~<time>至今</time></span>
-        <span>上海汉得信息技术公司</span>   
-       <span> 前端开发工程师</span>
+        <span>上海汉得信息技术公司</span>
+        <span> 前端开发工程师</span>
       </p>
     </section>
     <section class="projects">
       <h2>项目经历</h2>
-      
+
       <ol>
         <li>
           <header>
-            <h3>基于 React 的叶子记账应用</h3>
+            <h3>基于 Next.js 的 AI 简历生成应用</h3>
             <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
             <img src="images/gulu.png" alt="">
           </a> -->
             <span>
-              <a href="https://react-leaf.deng.gl">项目预览</a>
-              <a href="https://github.com/Allengl/react-leaf">源码链接</a>
+              <a href="https://x-resume-builder.vercel.app/">项目预览</a>
+              <a href="https://github.com/Allengl/x-resume-builder/tree/main">源码链接</a>
             </span>
           </header>
           <p>
-            技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Vite</strong> <strong>UnoCSS</strong>
+            技术栈： <strong>NextJS</strong> <strong>TailwindCSS</strong> <strong>ShadcnUI</strong>
           </p>
           <ul>
             <li>
@@ -353,28 +341,27 @@
             </li>
             <li>
               <p>
-                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> / <b>UnoCSS</b> 构建的记账应用，使用了 React Hooks, React
-                Router,Zustand 等工具库，构建的单页面记账页面
+                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> / <b>Tailwind CSS</b> / <b>Shadcn UI</b>
+                构建的在线简历与订阅管理平台，集成了 <b>Stripe Checkout</b>、<b>ChatGPT API</b>、<b>Prisma ORM</b> 等前沿技术。
               </p>
               <p>
-                用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
-                同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能
+                平台支持多种订阅级别的支付及客户管理，用户可通过 Stripe Checkout 快速购买订阅，并在客户门户中轻松管理个人信息和订阅状态。
               </p>
               <p>
-                用户记录的各项数据通过 Ruby on Rails 后端
-                提供的 API 进行数据的获取和存储
+                项目采用 React Hook Form 构建多步骤表单，配合 useFieldArray 实现动态表单布局，并利用 dnd-kit 实现拖拽排序，支持防抖后自动保存用户修改的数据，确保操作流畅高效。
               </p>
               <p>
-                可适配手机、平板、PC 端，同时具备响应式布局，适配不同分辨率的设备，提升用户体验
+                为了满足用户对简历设计的个性化需求，平台提供丰富的自定义选项，支持图片上传至 Vercel Blob，并通过 react-to-print 实现简历打印或导出 PDF 的功能。
               </p>
               <p>
-                主要页面有：登录页面、记账页面、新增标签页面、统计页面、记账信息可视化页面
+                数据层方面，系统使用 PostgreSQL 数据库，并借助 Prisma ORM 进行高效、类型安全的数据交互；同时采用 Clerk v6 完成用户认证，保障平台安全稳定运行。
               </p>
               <p>
-                记账数据可以查看本月、上月、今年以及自定义时间的收支情况，同时可以查看本月、上月、两月前的收支情况的饼图、折线图
+                前后端均通过 Zod Schema 实现输入校验，并利用 URL 搜索参数管理状态，结合 Zustand 实现全局对话框管理与智能缓存优化，提升整体性能。
               </p>
               <p>
-                项目构建过程中，我深入理解了和实践了 React 和 TypeScript 的使用方法，同时也对 React Hooks 和 React Router 等工具库有了更深的理解
+                整体界面使用 Tailwind CSS 和 Shadcn UI 组件构建，具备响应式设计、支持深色/浅色及系统主题切换，完美适配手机、平板和 PC 端。项目已成功部署至
+                Vercel，提供高可用性与优异的用户体验。
               </p>
             </li>
             <li>
@@ -382,146 +369,67 @@
             </li>
             <li>
               <p>
-                使用 ReactRouter 来做路由鉴权和路由守卫，使用 Zustand 来做全局状态管理
+                使用 Stripe Checkout 实现多层级订阅支付与客户门户，优化用户支付流程和订阅管理。
               </p>
               <p>
-                主要采用了 UnoCSS 和 styled-component CSS技术方案，由于 UnoCSS 是静态渲染的，所以还采用了 styled-component
-                来应对动态渲染 CSS 的情况
+                集成 ChatGPT API，实现智能表单自动填充，显著降低用户输入成本。
               </p>
               <p>
-                为了适配移动端浏览器，放弃了全屏，使用 vh-check 来整高度，使页面刚好填满画面
+                采用 React Hook Form 和 useFieldArray 构建多步骤、动态表单，利用 dnd-kit 实现拖拽排序和防抖自动保存，保障数据实时更新。
               </p>
               <p>
-                在没有后端 api 的情况下，用 Mock 和 fakerjs 来模拟请求数据
+                通过 react-to-print 实现简历打印及 PDF 导出功能，满足用户多样化的导出需求。
               </p>
               <p>
-                使用 JWT 来做登录鉴权，封装了 useAjax Hooks 让拦截器读取JWT，进行统一的错误处理和自动Loading，使用 errorElement + loader 实现路由守卫
+                使用 Prisma ORM 对接 PostgreSQL 数据库，确保端到端的类型安全；同时利用 Clerk v6 完成用户认证，增强系统安全性。
               </p>
               <p>
-                使用 SWR 来优化数据请求，用 useSWRInfinite 实现无限加载数据
+                前后端均采用 Zod 进行数据校验，结合 URL 搜索参数管理状态，并通过 Zustand 实现全局对话框管理和智能缓存，有效提升系统性能。
               </p>
               <p>
-                可视化部分引入 Echarts 模块，实现了折线图和饼图两种数据的可视化
-              </p>
-              <p>
-                提升网站性能方面，采用动态 import 和 Code Splitting 项目使用动态 import + suspense 来动态加载组件,用 manualChunks 对 Echarts 和
-                node_modules 进行手动分块，大大提高了网站的加载速度
-              </p>
-              <p>
-                后端接口方面使用 Ruby on Rails 实现，使用 rspec 进行测试驱动开发，用户数据使用 PostgreSQL 存储
+                前端界面基于 Tailwind CSS 与 Shadcn UI 组件构建，实现响应式、多主题设计，并已成功部署至 Vercel 平台，提供流畅、稳定的用户体验。
               </p>
             </li>
-          </ul>
-        </li>
-        <li class="page2">
-          <header>
-            <h3>基于 Vue3 的叶子记账应用</h3>
-            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
-            <img src="images/gulu.png" alt="">
-          </a> -->
-            <span>
-              <a href="https://vue-leaf.deng.gl">项目预览</a>
-              <a href="https://github.com/Allengl/vue-leaf">源码链接</a>
-            </span>
-          </header>
-          <p>
-            技术栈： <strong>Vue3</strong> <strong>TSX</strong> <strong>Vite</strong>
-          </p>
-          <ul>
-            <li>
-              <!-- <p style="text-indent:2em"> -->
-              <b>项目描述：</b>
-            </li>
-            <li>
-              <p>
-                本项目是本人为了提升自己的技术能力而做的项目，为了技术提升，所以本项目采用了之前不常用的技术栈 <b>Vue3</b> / <b>TSX</b> / <b>Vite</b> 构建的记账应用，
-                使用了 Vue Router, Pinia 等工具库
-              <p>
-                用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
-                同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能
-              </p>
-              <p>
-                用户记录的各项数据通过 Ruby on Rails 后端提供的 API 进行数据的请求和存储
-              </p>
-              <p>
-                可适配手机、平板、PC 端，同时具备响应式布局，适配不同分辨率的设备，提升用户体验
-              </p>
-              <p>
-                主要页面有：登录页面、记账页面、新增和删除标签页面、统计页面、记账信息可视化页面
-              </p>
-              <p>
-                记账数据可以查看本月、上月、今年以及自定义时间的收支情况，同时可以查看本月、上月及定义时间的收支情况的饼图、折线图
-              </p>
-              <p>
-                项目构建过程中，我深入理解了和实践了 Vue 3 Composition API 和 如何在 Vue 中使用 TSX，同时也对 Vue Router 和 Pinia 等工具库有了深入的理解
-              </p>
-              </p>
-            </li>
-            <li>
-              <b>项目经验：</b>
 
-            </li>
-            <li>
-              <p>
-                使用 VueRouter 来做路由鉴权和路由守卫，使用 Pinia 来做全局状态管理
-              </p>
-              <p>
-                主要采用了 CSS Modules 的技术方案来实现 CSS 渲染
-              </p>
-              <p>
-                使用 JWT 来做登录鉴权，封装了 Axios 实现自动Loading，自动的路由守卫，使用 beforeEach 做登录的权限控制
-              </p>
-              <p>
-                项目大量使用插槽和 v-model 来减少代码重复
-              </p>
-              <p>
-                使用 Echarts 实现可视化，引入 Vant UI 实现一些功能复杂的组件
-              </p>
-              <p>
-                使用自制 Vite SVG Sprites 插件优化 svg图片，将多个 svg 图片变成一个大的 svg
-              </p>
-              <p>
-                在没有后端 API 的情况下，使用 Mock 和 fakerjs 来模拟请求数据
-              </p>
-              <p>
-                性能优化方面，dynamic import 和 Rollup chunk 优化，然后进行条件编译，减少不同环境下的代码量
-              </p>
-            </li>
-          </ul>
-        </li>
-         <li>
-          <header>
-            <h3>基于 React 的大屏可视化</h3>
-            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
-            <img src="images/bigscreen.png">
+            <li class="page2">
+              <header>
+                <h3>基于 NextJS 的 AI 笔记软件</h3>
+                <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
+            <img src="images/gulu.png" alt="">
           </a> -->
-            <span>
-              <a href="https://allengl.github.io/bigscreen-website/#/">项目预览</a>
-              <a href="https://github.com/Allengl/bigscreen">源码链接</a>
-            </span>
-          </header>
-          <p>
-            技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Echarts</strong>
-          </p>
-          <ul>
-            <li>
-              <!-- <p style="text-indent:2em"> -->
-              <b>项目描述：</b>
-            </li>
+                <span>
+                  <a href="https://my-ai-note-app.vercel.app/">项目预览</a>
+                  <a href="https://github.com/Allengl/my-ai-note-app/tree/main">源码链接</a>
+                </span>
+              </header>
+              <p>
+                技术栈： <strong>NextJS</strong> <strong>TailwindCSS</strong> <strong>ShadcnUI</strong>
+                <strong>AI</strong> <strong>Prisma</strong> <strong>PostgreSQL</strong>
+              </p>
             <li>
               <p>
-                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Echarts</b> 构建的大屏可视化界面
-              <p>
-                页面将 Grid 布局和 Flex 布局结合起来，实现了页面的响应式布局
+                这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Next.js</b> / <b>TailwindCSS</b> / <b>Shadcn UI</b>
+                构建的智能笔记管理平台，整合了 Vercel AI SDK、Clerk、Prisma、PostgreSQL、next-themes 等前沿技术。
               </p>
               <p>
-                并且使用 Echarts 来实现数据可视化，实现了数据的实时更新
+                平台支持 AI 聊天功能，通过 Vercel AI SDK 的 <b>useChat</b>、<b>StreamingTextResponse</b> 和 <b>OpenAIStream</b>
+                实现流式响应；同时结合 ChatGPT 向量嵌入和 Pinecone，实现智能文档检索，极大提升了信息查询的精准度与效率。
               </p>
               <p>
-                页面采用了动态rem的方案，来适配所有屏幕
+                用户可通过 Clerk 完成安全身份认证，并在平台内创建、更新、删除笔记，所有数据均由 Prisma 连接 MongoDB Atlas 进行高效存储与管理。
               </p>
               <p>
-                项目中包含的图例有柱形图，折线图，饼图，地图等，并且所有图例 都可以实时更新数据并辅以动画交互
+                项目采用嵌套布局设计，利用 React Hook Form 与 Shadcn UI Form 实现前后端的表单验证，确保数据录入准确无误。
+              </p>
+              <p>
+                同时，通过 next-themes 实现亮暗主题切换，结合 TailwindCSS 修饰符打造全端响应式布局，使平台在手机、平板和 PC 端均有出色的展示效果。
+              </p>
+              <p>
+                主要页面包括：用户登录页面、笔记管理页面、文档检索页面以及个人设置页面，功能全面且操作便捷。
+              </p>
+              <p>
+                在项目开发过程中，我深入实践了 React 与 TypeScript 的最佳应用，掌握了 Vercel AI SDK 流式响应、Clerk 身份认证、Prisma 数据交互及 TailwindCSS
+                响应式布局等前沿技术。
               </p>
             </li>
             <li>
@@ -529,77 +437,165 @@
             </li>
             <li>
               <p>
-                项目使用了echarts来实现数据的可视化，了解了 Echarts 的属性如何控制图表的样式
+                采用 Vercel AI SDK 的 <b>useChat</b>、<b>StreamingTextResponse</b> 和 <b>OpenAIStream</b> 实现 AI
+                聊天流式响应，有效提升用户交互体验。
               </p>
               <p>
-                采用动态rem的方案来适配各种尺寸的屏幕，保持页面始终上下居中，左右居中
+                利用 ChatGPT 向量嵌入结合 Pinecone 实现智能文档检索，极大提高了大规模文档数据的查询效率与准确性。
               </p>
               <p>
-                放弃使用像素，编写了一个 px() 函数来适配所有 div
+                通过 next-themes 实现亮暗主题切换，满足用户对个性化界面的多样需求。
               </p>
               <p>
-                通过这个项目，我掌握了大屏可视化项目的制作技巧
+                使用 Clerk 完成用户身份认证，确保系统安全和数据隐私。
+              </p>
+              <p>
+                借助 Prisma 与 Vercel Postgres，实现笔记数据的创建、更新与删除，确保数据操作高效且稳定。
+              </p>
+              <p>
+                结合 React Hook Form 与 Shadcn UI Form 实现前后端数据校验，保障表单数据的准确性。
+              </p>
+              <p>
+                前端采用嵌套布局设计，并通过 TailwindCSS 修饰符实现全端响应式布局，大幅提升了移动端和桌面端的用户体验。
               </p>
             </li>
-          </ul>
-        </li>
-        <li class="page2">
-          <header>
-            <h3>基于 Vue 3 的 Gulu-UI 框架</h3>
-            <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
+            <!-- <li>
+              
+              <header>
+                <h3>基于 React 的大屏可视化</h3>
+                <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/bigscreen-website/#/">
             <img src="images/bigscreen.png">
-          </a> -->
-            <span>
-              <a href="https://gulu-ui.deng.gl/#/">项目预览</a>
-              <a href="https://github.com/Allengl/gulu-UI">源码链接</a>
-            </span>
-          </header>
-          <p>
-            技术栈： <strong>Vue3</strong> <strong>TypeScript</strong> <strong>Vite</strong>
-          </p>
-          <ul>
+          </a>
+                <span>
+                  <a href="https://allengl.github.io/bigscreen-website/#/">项目预览</a>
+                  <a href="https://github.com/Allengl/bigscreen">源码链接</a>
+                </span>
+              </header>
+              <p>
+                技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Echarts</strong>
+              </p>
+              <ul>
+                <li>
+                  <p style="text-indent:2em">
+                  <b>项目描述：</b>
+                </li>
+                <li>
+                  <p>
+                    这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Echarts</b> 构建的大屏可视化界面
+                  <p>
+                    页面将 Grid 布局和 Flex 布局结合起来，实现了页面的响应式布局
+                  </p>
+                  <p>
+                    并且使用 Echarts 来实现数据可视化，实现了数据的实时更新
+                  </p>
+                  <p>
+                    页面采用了动态rem的方案，来适配所有屏幕
+                  </p>
+                  <p>
+                    项目中包含的图例有柱形图，折线图，饼图，地图等，并且所有图例 都可以实时更新数据并辅以动画交互
+                  </p>
+                </li>
+                <li>
+                  <b>项目经验：</b>
+                </li>
+                <li>
+                  <p>
+                    项目使用了echarts来实现数据的可视化，了解了 Echarts 的属性如何控制图表的样式
+                  </p>
+                  <p>
+                    采用动态rem的方案来适配各种尺寸的屏幕，保持页面始终上下居中，左右居中
+                  </p>
+                  <p>
+                    放弃使用像素，编写了一个 px() 函数来适配所有 div
+                  </p>
+                  <p>
+                    通过这个项目，我掌握了大屏可视化项目的制作技巧
+                  </p>
+                </li>
+              </ul>
+            </li> -->
             <li>
-              <!-- <p style="text-indent:2em"> -->
-              <b>项目描述：</b>
+              <header>
+                <h3>基于 React 的叶子记账应用</h3>
+                <!-- <a style="border-bottom: 0 solid" href="https://allen-xiaodeng.github.io/gulu-ui-website/index.html">
+                <img src="images/gulu.png" alt="">
+              </a> -->
+                <span>
+                  <a href="https://react-leaf.vercel.app/">项目预览</a>
+                  <a href="https://github.com/Allengl/react-leaf/tree/main">源码链接</a>
+                </span>
+              </header>
+              <p>
+                技术栈： <strong>React</strong> <strong>TypeScript</strong> <strong>Vite</strong> <strong>UnoCSS</strong>
+              </p>
+              <ul>
+                <li>
+                  <!-- <p style="text-indent:2em"> -->
+                  <b>项目描述：</b>
+                </li>
+                <li>
+                  <p>
+                    这是一款基于 <b>React</b> / <b>TypeScript</b> / <b>Vite</b> / <b>UnoCSS</b> 构建的记账应用，使用了 React Hooks, React
+                    Router,Zustand 等工具库，构建的单页面记账页面
+                  </p>
+                  <p>
+                    用户可以进行日常生活中各项收支流水的记录，同时可以对记录进行分类，添加标签功能，方便用户对记录进行分类管理，
+                    同时可以对记录进行统计分析，查看收支情况，具备信息可视化查看功能
+                  </p>
+                  <p>
+                    用户记录的各项数据通过 Ruby on Rails 后端
+                    提供的 API 进行数据的获取和存储
+                  </p>
+                  <p>
+                    可适配手机、平板、PC 端，同时具备响应式布局，适配不同分辨率的设备，提升用户体验
+                  </p>
+                  <p>
+                    主要页面有：登录页面、记账页面、新增标签页面、统计页面、记账信息可视化页面
+                  </p>
+                  <p>
+                    记账数据可以查看本月、上月、今年以及自定义时间的收支情况，同时可以查看本月、上月、两月前的收支情况的饼图、折线图
+                  </p>
+                  <p>
+                    项目构建过程中，我深入理解了和实践了 React 和 TypeScript 的使用方法，同时也对 React Hooks 和 React Router 等工具库有了更深的理解
+                  </p>
+                </li>
+                <li class="page2">
+                  <b>项目经验：</b>
+                </li>
+                <li>
+                  <p>
+                    使用 ReactRouter 来做路由鉴权和路由守卫，使用 Zustand 来做全局状态管理
+                  </p>
+                  <p>
+                    主要采用了 UnoCSS 和 styled-component CSS技术方案，由于 UnoCSS 是静态渲染的，所以还采用了 styled-component
+                    来应对动态渲染 CSS 的情况
+                  </p>
+                  <p>
+                    为了适配移动端浏览器，放弃了全屏，使用 vh-check 来整高度，使页面刚好填满画面
+                  </p>
+                  <p>
+                    在没有后端 api 的情况下，用 Mock 和 fakerjs 来模拟请求数据
+                  </p>
+                  <p>
+                    使用 JWT 来做登录鉴权，封装了 useAjax Hooks 让拦截器读取JWT，进行统一的错误处理和自动Loading，使用 errorElement + loader 实现路由守卫
+                  </p>
+                  <p>
+                    使用 SWR 来优化数据请求，用 useSWRInfinite 实现无限加载数据
+                  </p>
+                  <p>
+                    可视化部分引入 Echarts 模块，实现了折线图和饼图两种数据的可视化
+                  </p>
+                  <p>
+                    提升网站性能方面，采用动态 import 和 Code Splitting 项目使用动态 import + suspense 来动态加载组件,用 manualChunks 对 Echarts 和
+                    node_modules 进行手动分块，大大提高了网站的加载速度
+                  </p>
+                  <p>
+                    后端接口方面使用 Ruby on Rails 实现，使用 rspec 进行测试驱动开发，用户数据使用 PostgreSQL 存储
+                  </p>
+                </li>
+              </ul>
             </li>
-            <li>
-              <p>
-                这是一款基于 <b>Vue3</b> / <b>TypeScript</b> / <b>Vite</b> 开发的 UI 框架
-              <p>
-                目前仅有四种不同的组件 Switch 组件，Button 组件，Dialog 组件，Tabs 组件，
-                但我可能会在以后添加更多，它可以在 npm 上下载安装
-              </p>
-              <p>
-                组件样式采用了简洁风的设计，简单易用，组件源代码也非常简洁，文档中也有良好的代码提示
-              </p>
-              <p>
-                UI组件封装过程中，让我对 Vue3 composition API 有了深入的理解，对 TypeScript 规范有了新的认识
-              </p>
-              </p>
-            </li>
-            <li>
-              <b>项目经验：</b>
-            </li>
-            <li>
-              <p>
-                使用 Vite 前端开发工具进行构建，其对于 Vue3 和 TypeScript 组合支持性极佳，开盒即用，项目构建快捷高效，
-                开发工程中项目各个组件拆分合理，分析需求，分解思路清晰，可实现高效模块化编程
-              </p>
-              <p>
-                使用 VueRouter 搭建 SFC 单文件应用，避免发送不必要的服务器请求，降低负担
-              </p>
-              <p>
-                Vue 3有许多新特性，其中最突出的一点就是组合式 API，围绕 setup 入口函数进行编程，打破 Vue 2 的模板语法固有模式
-                同时两者也可以结合使用
-              </p>
-              <p>
-                编写这个库的过程是一个非常有价值的学习经历，我遇到了一些之前从未遇到过的问题，比如如何使用函数打开对话框窗口，
-                对话框元素应该放在DOM中的哪个位置， 如何对CSS进行结构化，以避免用户创建组件时出现问题
-              </p>
-            </li>
-          </ul>
-        </li>
-        <!-- <li class="page2">
+            <!-- <li class="page2">
           <header>
             <h3>旺财记账</h3>
             <span>
@@ -625,46 +621,67 @@
         <!-- <div id="skills"></div> -->
         <ul>
           <li>
-          <p>熟悉 <strong>TypeScript</strong>，掌握HTML5/CSS3，熟悉 <strong>Flex布局</strong> 、<strong>Grid布局</strong> 、移动端适配等</p>
-          <p>熟悉React技术栈如 <strong>ReactRouter</strong> 、<strong>Hooks</strong> 、<strong>Zustand</strong>等技术，能够熟练使用React进行开发</p>
-          <p>熟悉Vue技术栈如 <strong> VueRouter</strong>、<strong>Pinia</strong> 、<strong>Vite</strong>及相关流行库的使用，理解其重要概念</p>
-          <p>熟练使用 <strong>CSS Modules</strong> 、<strong>Styled components</strong> 、<strong>UnoCSS</strong> 等CSS技术方案</p>
-          <p>熟悉前后端交互技术 <strong>Axios</strong> 、了解<strong> web性能优化</strong>和 <strong>Webpack</strong> 、<strong>Vite</strong> 等构建工具的使用</p>
-          <p>熟悉 <strong>微信小程序</strong> 开发，如使用 <strong>Taro</strong> 多端框架构建小程序</p>
-          <p>熟悉 <strong>git</strong> 及 <strong>linux</strong> 命令行的基本操作,对 <strong>Docker</strong> 容器化开发有一定了解 </p>
-          <p>熟悉 <strong>Java</strong>的一些基本概念，如<strong>集合</strong>、<strong>Servlet</strong>、<strong>Cookie 与 Session</strong>等</p>
-          <p>了解 <strong>MySQL</strong> 数据的基本操作以及一些相关概念</p>
-          <p>熟练使用 <strong>ChatGPT</strong>及其相关AI技术
-          <p> </p> 
+            <p>掌握 <strong>React</strong>
+              技术栈及
+              <strong>Next.js</strong> 服务端渲染、静态生成以及周边生态
+            </p>
+            <p>熟练掌握
+              <strong>TypeScript</strong>、<strong>HTML5/CSS3</strong>（<strong>Flex</strong>、<strong>Grid</strong>、<strong>响应式布局</strong>）
+            </p>
+            <p>熟练使用 <strong>TailwindCSS</strong> 等CSS
+              样式方案、以及 shadcnUI 、NextUI 等流行UI库
+            </p>
+            <p>熟悉 <strong>Axios</strong> 前后端交互、<strong>Webpack</strong>/<strong>Vite</strong> 构建工具及性能优化</p>
+            <p>熟悉 <strong>Git</strong>、<strong>Linux</strong> 命令行及 <strong>Docker</strong> 基础，了解
+              <strong>MySQL</strong> 基础操作
+            </p>
+            <p>熟悉 <strong>Prisma</strong> 数据库 ORM 工具</p>
+            <p>善用 <strong>DeepSeek</strong>、<strong>ChatGPT</strong>、<strong>cursor</strong>等
+              AI 相关工具</p>
+            <p> </p>
           </li>
         </ul>
-      <!-- </div> -->
+        <!-- </div> -->
     </section>
     <section class="openSource">
       <h2>个人项目</h2>
       <ul>
         <li>
           <header>
-            <h3>咕噜咕噜导航</h3>
+            <h3>Motto-AI</h3>
             <span>
-              <a href="https://Allengl.github.io/Project-nav-js/dist/index.html">项目预览</a>
-              <a href="https://github.com/Allengl/Project-nav-js">源码链接</a>
+              <a href="https://nextjs-motto-ai.vercel.app">项目预览</a>
+              <a href="https://github.com/Allengl/nextjs-mottoAI/tree/main">源码链接</a>
             </span>
           </header>
           <p>
-            这是我基于 <strong>原生JavaScript</strong> 自制的前端站点导航，可以方便收藏自己常去的一些网站
+            这是我基于 <strong>Next.js</strong> 和 <strong>Deepseek</strong> 的 AI 应用，可以根据用户输入的词语生成激励人心的句子
           </p>
         </li>
         <li>
           <header>
-            <h3>自己写的 DOM 库</h3>
-            <a href="https://github.com/Allengl/dom-2">源码链接</a>
+            <h3>Flowjobs</h3>
+            <span>
+              <a href="https://nextjs-job-board-git-main-allengl.vercel.app/">项目预览</a>
+              <a href="https://github.com/Allengl/nextjs-job-board/tree/main">源码链接</a>
+            </span>
           </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
+          <p>这是一个基于 <strong>Next.js</strong> 和 <strong>TailwindCSS</strong> 的求职招聘网站，可以方便用户查看和发布职位</p>
+        </li>
+
+        <li>
+          <header>
+            <h3>Pokedex</h3>
+            <span>
+              <a href="https://nextjs-pokedex-git-main-allengl.vercel.app/">项目预览</a>
+              <a href="https://github.com/Allengl/nextjs-pokedex/tree/main">源码链接</a>
+            </span>
+          </header>
+          <p>我在学习 <strong>SWR</strong> 的使用方法时做的一个小作品</p>
         </li>
         <li>
           <header>
-            <h3>会动的星之卡比</h3>
+            <h3>Draw a Kirby</h3>
             <span>
               <a href="https://Allengl.github.io/Kirby/dist/index.html">项目预览</a>
               <a href="https://github.com/Allengl/Kirby">源码链接</a>
@@ -672,20 +689,10 @@
           </header>
           <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
         </li>
-        <li>
-          <header>
-            <h3>简易画板</h3>
-            <span>
-              <a href="https://Allengl.github.io/canvas-demo-1/">项目预览</a>
-              <a href="https://github.com/Allengl/canvas-demo-1">源码链接</a>
-            </span>
-          </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
-        </li>
       </ul>
     </section>
     <section class="others">
-    <!-- <h2>其他链接</h2>
+      <!-- <h2>其他链接</h2>
       <ul>
       <li><a href="https://www.zhihu.com/people/fall-92-99">我的知乎</a>，目前已有 40 篇技术文章</li>
       <li><a href="https://github.com/Allengl">我的 GitHub</a>，过去三个月有近 300 次提交</li>
